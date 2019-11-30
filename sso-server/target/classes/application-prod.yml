@@ -1,0 +1,27 @@
+server:
+  port: 9999
+sso:
+  host: localhost
+  port: 9999
+  clientPort: 8888
+  cookieKey: sessionId
+  indexUrl: /index
+  loginErrorUrl: /loginError
+spring:
+  datasource:
+    username: root
+    password: Qydx123456.
+    url: jdbc:mysql://223.247.214.249:3306/qydx?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 0
+    host: 223.247.214.249
+    port: 6379
+    password: admin12345
+    lettuce:
+      pool:
+        max-active: 200
+        max-idle: 10
+        max-wait: -1
+        min-idle: 0
+        timeout: 1000
